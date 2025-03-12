@@ -1,0 +1,12 @@
+.homepage {
+    background: url('../../assets/HomePage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color for visibility */
+    text-align: center;
+  }
+  
