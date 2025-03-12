@@ -7,33 +7,53 @@ function HomePage() {
         <div className="homepage-grid">
             {/* Hero Section */}
             <div className="hero-section">
-                {/* <div className="tagline">Here's to 5 Amazing Years! 🎉❤️</div> */}
-
                 <div className="hero-container">
+                    <h1 className="tagline">Our special day, your special presence!</h1>
                     <img src={couplePhoto} alt="Couple" className="hero-image" />
                     <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1>
                 </div>
+            </div>
 
-                <div className="welcome-message">
-                    Every moment together is a blessing, and today, we celebrate five incredible years of love and joy with our cherished family and friends!
-                </div>
-
+            <div className="welcome-message">
+                We found love, we kept love, and now we celebrate love—with you! Come, be a part of our special day and make it even more memorable!💕✨
             </div>
 
             {/* Event Details Section */}
             <div className="event-section">
-                <img src={swamy} alt='swamy'/>
-                <h2 className="event-title">Sri Satyanarayana Swamy Pooja</h2>
-                
-                <div className="event-details-container">
-                    <p className="event-details">
-                        Join us for a special evening filled with divine blessings, love, and laughter.
+                <div className="god-image-container">
+                    <img src={swamy} alt="Sri Satyanarayana Swamy" className="god-image"/>
+                </div>
+                <div className="event-card">
+                    <h2 className="event-title">Sri Satyanarayana Swamy Pooja</h2>
+                    <p className="event-details">Join us for a special event filled with divine blessings, love, and laughter.</p>
+                    <p className="event-date">📅 Date: March 24, 2025</p>
+                    <p className="event-time">⏰ Time: 12:00 PM onwards</p>
+                    <p className="event-venue">
+                        📍 Venue: <a href="https://maps.app.goo.gl/xbzrV6SfBJw8ABG96" target="_blank" rel="noopener noreferrer">
+                        Sri Chandrala Nilaya, Bengaluru
+                        </a>
                     </p>
-                    <p className="event-date">📅 Date: March 25, 2025</p>
-                    <p className="event-time">⏰ Time: 6:00 PM onwards</p>
-                    <p className="event-venue">📍 Venue: Indikar Residence, Pune</p>
+
+                    {/* Add to Google Calendar Button */}
+                    <a 
+                        className="add-to-calendar" 
+                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Sri+Satyanarayana+Swamy+Pooja&dates=20250324T063000Z/20250324T083000Z&details=Join+us+for+a+special+pooja+ceremony!&location=Sri+Chandrala+Nilaya,+Bengaluru&sf=true&output=xml"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        ➕ Add to Google Calendar
+                    </a>
                 </div>
             </div>
+
+            {/* Footer Section */}
+            <footer className="footer">
+                <p className="footer-title">If you're lost, don’t worry—Google Maps is too! Call us!</p>
+                <div className="contact-info">
+                    <p>📞 Rohit: +91 9742467082</p>
+                    <p>📞 Roopa: +91 9606502100</p>
+                </div>
+            </footer>
         </div>
     );
 }
