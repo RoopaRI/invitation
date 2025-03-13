@@ -1,48 +1,32 @@
-import { useEffect } from 'react';
 import './HomePage.css';
 import couplePhoto from '../../assets/croppedcouple.png';
 import swamy from '../../assets/swamy_cropped.png';
 import bgMusic from '../../assets/background_music.mp3'; // ✅ Import audio file
 
 function HomePage() {
-    useEffect(() => {
-        const playAudio = () => {
-            const audio = document.getElementById("bgMusic");
-            if (audio) {
-                audio.muted = false;  // Unmute audio
-                audio.play().catch(err => console.log("Autoplay blocked:", err)); 
-            }
-            // Remove event listener after first interaction
-            document.removeEventListener("click", playAudio);
-        };
-
-        // Add event listener to enable audio when user clicks anywhere
-        document.addEventListener("click", playAudio);
-
-        return () => {
-            document.removeEventListener("click", playAudio);
-        };
-    }, []);
-
     return (
         <div className="homepage-grid">
-            {/* ✅ Background Music - Auto Plays in Loop After User Clicks */}
-            <audio id="bgMusic" src={bgMusic} loop />
+            {/* ✅ Background Music - Auto Plays in Loop */}
+            <audio id="bgMusic" src={bgMusic} autoPlay loop muted></audio>
 
-            <div className='tagline-container'>
+
+<div className='tagline-container'>
                 <h1 className="tagline">Our special day, your special presence!</h1>
-            </div>
+                </div>
 
             {/* Hero Section */}
             <div className="hero-section">
+
+                
                 <div className="hero-container">
+                    {/* <h1 className="tagline">Our special day, your special presence!</h1> */}
                     <img src={couplePhoto} alt="Couple" className="hero-image" />
                     <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1>
                 </div>
             </div>
 
             <div className="welcome-message">
-                Mr & Mrs Rohit Indikar invite you to celebrate love, faith, and togetherness. Come, be a part of our special day and make it even more memorable!💕✨
+                We found love, we kept love, and now we celebrate love—with you! Come, be a part of our special day and make it even more memorable!💕✨
             </div>
 
             {/* Event Details Section */}
