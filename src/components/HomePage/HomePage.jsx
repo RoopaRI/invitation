@@ -1,16 +1,20 @@
 import './HomePage.css';
 import couplePhoto from '../../assets/croppedcouple.png';
 import swamy from '../../assets/swamy_cropped.png';
+import bgMusic from '../../assets/background_music.mp3'; // ✅ Import audio file
 
 function HomePage() {
     return (
         <div className="homepage-grid">
+            {/* ✅ Background Music - Auto Plays in Loop */}
+            {/* <audio src={bgMusic} autoPlay loop hidden /> */}
+
             {/* Hero Section */}
             <div className="hero-section">
                 <div className="hero-container">
-                    <h1 className="tagline">Our special day, your special presence!</h1>
+                    {/* <h1 className="tagline">Our special day, your special presence!</h1> */}
                     <img src={couplePhoto} alt="Couple" className="hero-image" />
-                    <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1>
+                    {/* <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1> */}
                 </div>
             </div>
 
