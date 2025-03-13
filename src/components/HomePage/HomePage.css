@@ -48,6 +48,7 @@
     position: relative;
     width: 100%;
     max-width: 350px;
+    text-align: center;
 }
 
 .hero-image {
@@ -61,15 +62,23 @@
     transform: translateX(-50%);
 }
 
+/* Couple Names */
 .couple-names {
+    position: absolute;
+    bottom: 0;  /* Adjust this value to move it higher/lower */
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    background: linear-gradient(45deg, rgb(93, 68, 236), rgb(34, 7, 13), rgb(27, 34, 63));
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradientShift 5s ease infinite;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4); /* Adds contrast for readability */
+    padding: 5px 15px;
+    border-radius: 10px;
+    width:90%;
 }
+
 
 
 

@@ -20,7 +20,7 @@ function HomePage() {
                 <div className="hero-container">
                     {/* <h1 className="tagline">Our special day, your special presence!</h1> */}
                     <img src={couplePhoto} alt="Couple" className="hero-image" />
-                    {/* <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1> */}
+                    <h1 className="couple-names">Mr & Mrs Rohit Indikar</h1>
                 </div>
             </div>
 
