@@ -1,6 +1,6 @@
 import './HomePage.css';
 import couplePhoto from '../../assets/croppedcouple.png';
-import swamy from '../../assets/swamy.png';
+import swamy from '../../assets/swamy_cropped.png';
 
 function HomePage() {
     return (
@@ -26,7 +26,7 @@ function HomePage() {
                 <div className="event-card">
                     <h2 className="event-title">Sri Satyanarayana Swamy Pooja</h2>
                     <p className="event-details">Join us for a special event filled with divine blessings, love, and laughter.</p>
-                    <p className="event-date">📅 Date: March 24, 2025</p>
+                    <p className="event-date">📅 Date: May 24, 2025</p>
                     <p className="event-time">⏰ Time: 12:00 PM onwards</p>
                     <p className="event-venue">
                         📍 Venue: <a href="https://maps.app.goo.gl/xbzrV6SfBJw8ABG96" target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ function HomePage() {
 
             {/* Footer Section */}
             <footer className="footer">
-                <p className="footer-title">If you're lost, don’t worry—Google Maps is too! Call us!</p>
+                <p className="footer-title">If you're lost, Call us!</p>
                 <div className="contact-info">
                     <p>📞 Rohit: +91 9742467082</p>
                     <p>📞 Roopa: +91 9606502100</p>

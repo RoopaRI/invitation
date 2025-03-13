@@ -23,6 +23,7 @@
     -webkit-background-clip: text;
     color: transparent;
     animation: fireworks 5s linear infinite;
+    margin-bottom: 10px;
 }
 
 @keyframes fireworks {
@@ -34,23 +35,27 @@
 
 /* Hero Section */
 .hero-section {
-    background: url('../../assets/floral.jpg') no-repeat center center;
+    background: url('../../assets/rotating_bg.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
-    
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    padding: 25px;
 }
+
 
 /* Hero Image */
 .hero-container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .hero-image {
@@ -77,15 +82,16 @@
 
 .welcome-message {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     text-align: left;
     background: rgba(141, 210, 241, 0.6);
     padding: 20px 0 20px 20px;
     border-radius: 0 30px 30px 0;
-    margin-right: 30px;
+    
     position: relative;
     animation: float 3s ease-in-out infinite;
+    padding: 15px;
 }
 
 
@@ -99,7 +105,7 @@
     align-items: center;
     justify-content: center;
     background: white; /* Plain Background */
-    
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     color: black;
@@ -108,10 +114,11 @@
 
 /* Floating God Image with Glow */
 .god-image {
-    width: 220px;
+    width: 300px;
     animation: floatUpDown 3s infinite alternate;
     filter: drop-shadow(0px 8px 20px gold);
     border-radius: 10px;
+    max-width: 80%;
 }
 
 /* Soft Glow Around God Image */
@@ -149,20 +156,28 @@
 
 /* Event Details Card */
 .event-card {
-    background: #fff8e7; /* Light Cream Background */
-    padding: 20px;
+    background: url('../../assets/krishna_blush.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the whole image fits */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    padding: 15px;
     border-radius: 15px;
     width: 80%;
     max-width: 500px;
+    min-height: 400px; /* Adjust minimum height */
     box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.7);
     border: 3px solid gold;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Event Title */
 .event-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: darkred;
     text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.5);
 }
@@ -175,35 +190,10 @@
     color: black;
 }
 
-/* Footer Styling */
-.footer {
-    background: #222; /* Dark background */
-    color: white;
-    text-align: center;
-    margin-top: 40px;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.footer-title {
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    color: #f4b400; /* Gold color */
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: #ddd;
-}
-
-/* Add hover effect for interactive feel */
-.contact-info p:hover {
-    color: #f4b400;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+/* Reduce Space Between Event Details */
+.event-card p {
+    margin: 5px 0; /* Reduce top and bottom margin */
+    line-height: 1.2; /* Reduce space between lines */
 }
 
 /* Google Calendar Button */
@@ -227,26 +217,107 @@
 }
 
 
-/* Responsive Design */
+/* Footer Styling */
+.footer {
+    background: #f5f5dc; /* Beige */
+    color: #4e342e; /* Dark Brown */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #8b4513; /* Saddle Brown */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #8b4513; /* Saddle Brown */
+}
+
+/* Add hover effect for interactive feel */
+.contact-info p:hover {
+    color: #f4b400;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* 🔥 Mobile Responsive Fixes */
 @media (max-width: 768px) {
     .homepage-grid {
-        grid-template-columns: 1fr; /* Switch to a single column layout */
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+        gap: 10px;
     }
 
-    .hero-section,
-    .event-section {
-        width: 100%;
+    .hero-container {
+        max-width: 350px;
     }
 
-    .event-section img {
-        width: 180px;
-    }
-
-    .event-title {
+    .tagline {
         font-size: 1.8rem;
     }
 
-    .event-details-container {
+    .couple-names {
+        font-size: 1.6rem;
+    }
+
+    .welcome-message {
+        font-size: 1.3rem;
+        width: 80%;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .event-card {
         width: 90%;
+        min-height: 750px;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-container {
+        max-width: 300px;
+    }
+
+    .tagline {
+        font-size: 2rem;
+    }
+
+    .couple-names {
+        font-size: 1.4rem;
+    }
+
+    .welcome-message {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+
+    .event-card {
+        width: 90%;
+        min-height: 650px; /* Adjust height for mobile */
+        padding: 15px;
+    }
+
+    .footer-title {
+        font-size: 0.9rem;
     }
 }
