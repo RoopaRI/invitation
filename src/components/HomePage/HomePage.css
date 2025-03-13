@@ -86,23 +86,48 @@
 
 
 
-
-
-
+@keyframes scrollText {
+    0% { transform: translateY(100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100%); opacity: 0; }
+}
 
 .welcome-message {
+    position: relative;
+    background: url('../../assets/scroll.png') no-repeat center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Controls the size of the background image */
+    width: 80%;
+    height: 380px;
+
+    /* Centering in the parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    overflow: hidden; /* Ensures the scrolling text doesn't overflow */
+}
+
+.welcome-text {
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
-    color: black;
-    text-align: left;
-    background: rgba(141, 210, 241, 0.6);
-    padding: 20px 0 20px 20px;
-    border-radius: 0 30px 30px 0;
-    
-    position: relative;
-    animation: float 3s ease-in-out infinite;
-    padding: 15px;
+    color: white;
+    text-align: center;
+
+    /* Control the text box size */
+    width: 50%;
+    max-width: 500px;
+    max-height: 70px;
+    padding: 20px;
+
+    /* Scrolling effect */
+    animation: scrollText 8s linear infinite; /* Adjust duration for speed */
 }
+
 
 
 
@@ -119,7 +144,7 @@
 
 
     padding: 30px;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     text-align: center;
     color: black;
     position: relative;
@@ -191,8 +216,8 @@
 .event-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
-    color: darkred;
-    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.5);
+    color: rgb(211, 5, 142);
+    text-shadow: 2px 2px 8px gold;
     margin-top: -20px;
     
 }
@@ -325,7 +350,7 @@
 
     .welcome-message {
         font-size: 1.2rem;
-        width: 80%;
+        width: 90%;
     }
 
     .event-title {
