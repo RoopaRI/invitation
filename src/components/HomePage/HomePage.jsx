@@ -7,10 +7,16 @@ function HomePage() {
     return (
         <div className="homepage-grid">
             {/* ✅ Background Music - Auto Plays in Loop */}
-            {/* <audio src={bgMusic} autoPlay loop hidden /> */}
+            <audio src={bgMusic} autoPlay loop hidden />
+
+<div className='tagline-container'>
+                <h1 className="tagline">Our special day, your special presence!</h1>
+                </div>
 
             {/* Hero Section */}
             <div className="hero-section">
+
+                
                 <div className="hero-container">
                     {/* <h1 className="tagline">Our special day, your special presence!</h1> */}
                     <img src={couplePhoto} alt="Couple" className="hero-image" />
