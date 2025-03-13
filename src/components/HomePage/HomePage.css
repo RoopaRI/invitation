@@ -18,9 +18,13 @@
 
 
     overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0; /* Remove any external margin */
+    padding: 0; /* Remove any extra spacing */
 }
 
+
 .tagline {
+
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     text-align: center;
@@ -85,14 +89,6 @@
 }
 
 
-
-@keyframes scrollText {
-    0% { transform: translateY(-15%); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-100%); opacity: 0; }
-}
-
 .welcome-message {
     position: relative;
     background: url('../../assets/scroll.png') no-repeat center center;
@@ -121,11 +117,8 @@
     /* Control the text box size */
     width: 50%;
     max-width: 500px;
-    max-height: 70px;
+    max-height: 300px;
     padding: 20px;
-
-    /* Scrolling effect */
-    animation: scrollText 8s linear infinite; /* Adjust duration for speed */
 }
 
 

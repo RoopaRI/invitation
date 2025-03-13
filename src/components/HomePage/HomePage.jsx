@@ -9,10 +9,14 @@ function HomePage() {
             {/* ✅ Background Music - Auto Plays in Loop */}
             <audio id="bgMusic" src={bgMusic} autoPlay loop muted></audio>
 
-
-<div className='tagline-container'>
+{/* Footer Section */}
+<header className="footer">
+                <div className='tagline-container'>
                 <h1 className="tagline">Our special day, your special presence!</h1>
                 </div>
+            </header>
+
+
 
             {/* Hero Section */}
             <div className="hero-section">
