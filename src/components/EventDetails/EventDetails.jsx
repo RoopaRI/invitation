@@ -1,7 +1,7 @@
 import React from 'react';
 // import './EventDetails.css';
 import '../HomePage/HomePage.css';
-import swamy from '../../assets/swamy_cropped.png';
+import swamy from '../../assets/swamy2.jpg';
 
 const EventDetails = () => {
     return (
@@ -12,10 +12,15 @@ const EventDetails = () => {
             <div className="event-card">
                 <h2 className="event-title">Sri Satyanarayana Swamy Pooja</h2>
                 <p className="event-details">Join us for a special event filled with divine blessings, love, and laughter.</p>
-                <p className="event-date">📅 May 24, 2025</p>
-                <p className="event-time">⏰ 12:00 PM onwards</p>
+                <p className="event-date">
+                📆 May 24, 2025
+                </p>
+                <p className="event-time">
+                🌞 12:00 PM onwards
+                {/* ⌛ 12:00 PM onwards */}
+                </p>
                 <p className="event-venue">
-                    📍 <a href="https://maps.app.goo.gl/xbzrV6SfBJw8ABG96" target="_blank" rel="noopener noreferrer">
+                🏡 <a href="https://maps.app.goo.gl/xbzrV6SfBJw8ABG96" target="_blank" rel="noopener noreferrer">
                         Sri Chandrala Nilaya, Bengaluru
                     </a>
                 </p>
