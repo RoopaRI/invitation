@@ -13,9 +13,9 @@
     padding: 5px;
     /* background: radial-gradient(circle, #faeeba, #fceabb); */
     /* background: radial-gradient(circle, #ffd700, #faeeba, #fff8e7); */
-    background: radial-gradient(circle, #ff758c, #faeeba, #eedd9c);
-
-
+    /* background: radial-gradient(circle, #ff758c, #faeeba, #eedd9c); */
+     background: url('../../assets/lotus.jpg') no-repeat center center;
+    background-size: cover; 
 
     overflow-x: hidden; /* Prevents horizontal scrolling */
     margin: 0; /* Remove any external margin */
@@ -38,7 +38,7 @@
 
 /* Hero Section */
 .hero-section {
-    background: url('../../assets/temple.jpg') no-repeat center center;
+    background: url('../../assets/govinda.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -91,14 +91,12 @@
 
 .welcome-message {
     position: relative;
-    background: url('../../assets/scroll.png') no-repeat center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    /* background: url('../../assets/deepa_rangoli.jpg') no-repeat center center;
+    background-size: contain; */
     /* Controls the size of the background image */
-    width: 80%;
-    height: 380px;
+    width: 60%;
+    max-width: 600px;
+    height: 200px;
 
     /* Centering in the parent */
     display: flex;
@@ -111,12 +109,12 @@
 .welcome-text {
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(58, 3, 58);
     text-align: center;
 
     /* Control the text box size */
-    width: 50%;
-    max-width: 500px;
+    width: 80%;
+    max-width: 600px;
     max-height: 300px;
     padding: 20px;
 }
@@ -260,6 +258,7 @@
     color: #0f0f0f; /* Dark Brown */
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;;
     padding: 20px 0;
     border-radius: 10px;
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
@@ -342,7 +341,7 @@
     }
 
     .welcome-message {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 90%;
     }
 
