@@ -96,7 +96,7 @@
     /* Controls the size of the background image */
     width: 60%;
     max-width: 600px;
-    height: 300px;
+    height: 250px;
 
     /* Centering in the parent */
     display: flex;
@@ -150,6 +150,7 @@
     border-radius: 50%;
     max-width: 100%;
     object-fit:cover;
+    border: 1px solid black
 }
 
 /* Soft Glow Around God Image */
@@ -272,16 +273,16 @@
 
 /* Footer Styling */
 .footer {
-    background: url('../../assets/footer.jpg') no-repeat center center;
+    background: url('../../assets/peacock.jpg') no-repeat center center;
     background-size: cover; /* Ensures the whole image fits */
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center; /* Centers the image */
     color: #0f0f0f; /* Dark Brown */
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;;
     /* padding: 20px 0; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
 }
@@ -289,15 +290,17 @@
 .footer-title {
     font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
-    color: #630a0a; /* Saddle Brown */
+    color: #e8eb4a; /* Saddle Brown */
     margin-bottom: 10px;
+    padding:0 10px 0 10px;
 }
 
 .contact-info p {
     font-family: 'Dancing Script', cursive;
     font-size: 1rem;
     margin: 5px 0;
-    color: #3a1902; /* Saddle Brown */
+    color: #eedfd5; /* Saddle Brown */
+    padding:0 10px 0 10px;
 }
 
 /* Add hover effect for interactive feel */
