@@ -6,7 +6,7 @@ const WelcomeMessage = () => {
     return (
         <div className="welcome-message">
             <div className="welcome-text">
-                We found love, we kept love, and now we celebrate love—with you!💑 
+                We found love, we kept love, and now we celebrate love—with you! 
                 Come, be a part of our special day and make it even more memorable!🎊
             </div>
         </div>
