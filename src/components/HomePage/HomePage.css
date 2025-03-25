@@ -162,8 +162,8 @@
 
 .god-image-container::before {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background: radial-gradient(circle, rgb(170, 44, 13) 20%, transparent 80%);
     border-radius: 50%;
     top: 50%;
@@ -301,7 +301,11 @@
     margin: 5px 0;
     color: #eedfd5; /* Saddle Brown */
     padding:0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds spacing between rows */
 }
+
 
 /* Add hover effect for interactive feel */
 .contact-info p:hover {
