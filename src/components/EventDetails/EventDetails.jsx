@@ -16,7 +16,7 @@ const EventDetails = () => {
                 📆 May 24, 2025
                 </p>
                 <p className="event-time">
-                🌞 12:00 PM onwards
+                🙏 Pooja: 10:30am, 🍛 Lunch: 12:30pm
                 {/* ⌛ 12:00 PM onwards */}
                 </p>
                 <p className="event-venue">
@@ -25,13 +25,14 @@ const EventDetails = () => {
                     </a>
                 </p>
                 <a 
-                    className="add-to-calendar" 
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Sri+Satyanarayana+Swamy+Pooja&dates=20250324T063000Z/20250324T083000Z&details=Join+us+for+a+special+pooja+ceremony!&location=Sri+Chandrala+Nilaya,+Bengaluru&sf=true&output=xml"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    ➕ Add to Google Calendar
-                </a>
+    className="add-to-calendar" 
+    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Sri+Satyanarayana+Swamy+Pooja&dates=20250524T050000Z/20250524T070000Z&details=Join+us+for+a+special+pooja+ceremony!&location=Sri+Chandrala+Nilaya,+Bengaluru&sf=true&output=xml"
+    target="_blank" 
+    rel="noopener noreferrer"
+>
+    ➕ Add to Google Calendar
+</a>
+
             </div>
         </div>
     );

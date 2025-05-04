@@ -38,8 +38,8 @@
 
 /* Hero Section */
 .hero-section {
-    background: url('../../assets/temple.jpg') no-repeat center center;
-    background-size: cover;
+    /* background: url('../../assets/temple.jpg') no-repeat center center;
+    background-size: cover; */
     color: white;
     text-align: center;
     display: flex;
@@ -168,7 +168,7 @@
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     animation: glowPulse 4s infinite alternate, rotateAura 10s linear infinite;
 }
